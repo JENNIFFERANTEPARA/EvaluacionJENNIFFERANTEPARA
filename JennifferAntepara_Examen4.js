@@ -29,8 +29,8 @@ class Persona {
     }
 }
 
-class Empleado extends Empleado {
-    tipo;
+class Empleado extends Persona {
+    tipo="c"||"s";
 
     constructor(nombre,apellido,tipo){
         this.tipo=tipo
