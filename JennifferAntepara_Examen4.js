@@ -63,5 +63,9 @@ calculoDeDiaPago (){
 }
 
 }    
-let p = new Persona("Jenifer","Antepara",31)
+let p = new Persona("Jenifer","Antepara",31);
+let p2 = new Persona("Jazmin","Gomez",35);
+let p3 = new Persona("Erika","Lopez",40);
 console.log(p);  
+console.log(p2); 
+console.log(p3); 
