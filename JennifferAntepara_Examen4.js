@@ -23,23 +23,37 @@ class Persona {
     nombre;
     apellido;
     edad;
-    constructor(nombre,apellido){
+    constructor(nombre,apellido,edad){
         this.nombre=nombre;
-        this.apellido;
+        this.apellido=apellido;
+        this.edad=edad;
     }
+    getDetalles(Persona) {
+        let p = new Persona("Jenifer","Antepara");
+        console.log(p);   
+        }
+    
+
 }
 
 class Empleado extends Persona {
     tipo="c"||"s";
 
     constructor(nombre,apellido,tipo){
-        this.tipo=tipo
-    }  
+        this.tipo=tipo;
+    
+    if (tipo=="c") {
+       console.log("verifica") ;
+
+    } else {
+        console.log("otro") ;
+    }
+}
 }
 class Nomina extends Empleado {
 
     constructor(){
-        super.Nomina
+        super.Nomina;
     }
 calculoDeDiaPago (){
 
@@ -47,4 +61,7 @@ calculoDeDiaPago (){
         
     }
 }
+
 }    
+let p = new Persona("Jenifer","Antepara",31)
+console.log(p);  
