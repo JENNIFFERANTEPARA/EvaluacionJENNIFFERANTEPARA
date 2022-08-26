@@ -28,14 +28,23 @@ class Persona {
         this.apellido;
     }
 }
-____________________
+
 class Empleado extends Empleado {
     tipo;
 
     constructor(nombre,apellido,tipo){
         this.tipo=tipo
     }  
-}__________________
-class Nomina  {
+}
+class Nomina extends Empleado {
 
+    constructor(){
+        super.Nomina
+    }
+calculoDeDiaPago (){
+
+    if (Empleado.tipo=="s") {
+        
+    }
+}
 }    
