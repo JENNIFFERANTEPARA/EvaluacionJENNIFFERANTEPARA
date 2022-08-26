@@ -11,19 +11,19 @@ realice las siguientes operaciones:
 let dato1 = [3, 2, 1, 1, 2, 3, 2, 3, 1];
 let dato2 = [1, 1, 2, 2, 1, 1, 1, 2, 1];
 
-let multiplicacion = new Array(dato1);
-
-for (x=0; x<multiplicacion.length;x++){
-    multiplicacion[x] = new Array(dato2)
-}
-
-console.log(multiplicacion[x]); 
-
-let arraymul = dato1[0]*dato2[0];
-
-let arraysum = dato1[0]+dato2[0];
-
 console.log("Arreglo: [" +dato1, "]");
 console.log("Arreglo: [" +dato2, "]");
-console.log(+dato1[0],"*" , +dato2[0] ," = " ,+arraymul, );
-console.log(+dato1[0],"+" , +dato2[0] ," = " ,+arraysum, );
+
+for (let x=0; x<dato1.length;x++){
+    let arraymul = dato2[x]*dato1[x];
+    
+for (let x=0; x<dato1.length;x++){
+        let arraysum = dato1[x]+dato2[x];
+
+       // let arraya = dato1[1]*dato2[1];
+//console.log(+dato1[1],"*" , +dato2[1] ," = " ,+arraya);
+console.log(+dato1[x],"+" , +dato2[x] ," = " ,+arraysum);
+console.log(+dato1[x],"*" , +dato2[x] ," = " ,+arraymul);
+
+}
+}
